@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.log
+
+# Virtualenv
+.venv/
+env/
+venv/
+
+# MacOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# dotenv
+.env
+.env.*
+
+# OS / Thumbs
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# SQLite
+*.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Uvicorn cache
+*.pid
+
+# Misc
+*.bak
+*.swp
+*.tmp
