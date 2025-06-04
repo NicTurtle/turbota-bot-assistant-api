@@ -3,7 +3,7 @@ from aiogram.types import Message
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.filters import CommandStart
 from config import TELEGRAM_TOKEN, OPENAI_API_KEY
-from gpt import ask_gpt, test_openai_token
+from services.gpt import ask_gpt, test_openai_token
 
 bot = Bot(token=TELEGRAM_TOKEN)
 dp = Dispatcher(storage=MemoryStorage())

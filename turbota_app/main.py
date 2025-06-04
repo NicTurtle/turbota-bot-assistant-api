@@ -1,7 +1,8 @@
 from fastapi import FastAPI
-import asyncio
-from bot import start_bot
 from contextlib import asynccontextmanager
+import asyncio
+from turbota_app.bot import start_bot  # обновлённый импорт
+from turbota_app.routers import base
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -9,7 +10,4 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(lifespan=lifespan)
-
-@app.get("/")
-async def root():
-    return {"message": "TurbotaBot is running."}
+app.include_router(base.router)
