@@ -27,7 +27,7 @@ TurbotaBot connects GPT-based intelligence with Telegram to offer 24/7 empathy-d
 
 1. Clone the repo:
     ```bash
-    git clone https://github.com/NicTurtle/turbotabot.git
+    git clone https://github.com/NicTurtle/turbota-bot-assistant-api.git
     cd turbotabot
     ```
 
